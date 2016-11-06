@@ -1,12 +1,111 @@
+/* General */
+
 body {
   background: #fff;
   color: #222;
-  font-size: small;
+  font-family: arial,sans-serif;
+}
+
+/* Navigation Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    float: right;
+}
+
+li#gmail, li#images {
+  margin-top: 13px;
+}
+
+li#gmail a, li#images a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #4c4c4c;
+}
+
+li#options div, li#notifs, li#notifs a, li#profile a, li#profile div {
+  cursor: default;
+}
+
+li#images a {
+  margin-right: 9px;
+}
+
+li#gmail a {
+  margin: 15px;
+}
+
+li#gmail a:hover, li#images a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+li#options {
+  width: 16px; height: 16px;
+  margin-top: 15px;
+  margin-left: 13px;
+}
+
+li#options div {
+  width: 100%; height: 100%;
+  display: block;
+  background-image: url("img/options.png");
+}
+
+li#options:hover div {
+  background-image: url("img/options_hover.png");
+}
+
+li#notifs {
+  height: 20px; width: 20px;
+  margin-top: 13px;
+  margin-left: 27px;
+  background-color: #767676;
+  border-radius: 100%;
+}
+
+li#notifs:hover {
+  background-color: #000;
+}
+
+li#notifs img {
+  cursor: default;
+  border-radius: 100%;
+  margin: 0 5px 0 5px;
+}
+
+li#profile {
+  margin-top: 7px;
+  margin-left: 19px;
+  margin-right: 21px;
+}
+
+li#profile div {
+  width: 32px; height: 32px;
+  background-image: url("img/profile.jpg");
+  display: block;
+  border-radius: 100%;
+}
+
+/* Logo and searchbox */
+
+div#content {
+  margin-top: 0;
+  clear: both;
+}
+
+form {
+  margin-top: 0;
 }
 
 #logo {
   height:233px;
-  margin-top:89px;
+  margin-top:50px;
 }
 
 #logo img {
@@ -16,17 +115,16 @@ body {
 }
 
 input[type="search"] {
-  height: 38px;
-/*   border: none; */
+  width: 584px; height: 40px;
+  border: 1px solid #d0d0d0;
   line-height: 0;
-  width: 584px; height: 38px;
   overflow: visible;
   white-space: nowrap;
 }
 
-center {
-  display: block;
-  text-align: -webkit-center;
+input[type="search"]:focus {
+/*   dispaly: inline; */
+/*   border: 1px none #4d90fe; */
 }
 
 input[type="submit"] {
@@ -40,7 +138,7 @@ input[type="submit"] {
   font-weight: bold;
   height: 36px;
   line-height: 27px;
-  margin: 11px 4px;
+  margin: 32px 2px;
   min-width: 54px;
   padding: 0 16px;
   text-align: center;
@@ -49,8 +147,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-  background-color: #f8f8f8;
+  background-color: #000000;
   border: 1px solid #c6c6c6;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px #000000;
   color: #222;
 }
